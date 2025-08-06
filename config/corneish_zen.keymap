@@ -58,10 +58,10 @@
 
         mouse {
             bindings = <
-&trans       &trans  &trans  &trans  &trans  &trans    &trans          &msc SCRL_DOWN  &msc SCRL_UP  &trans           &trans  &trans
-&sys_reset   &trans  &trans  &trans  &trans  &trans    &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &trans  &trans
-&bootloader  &trans  &trans  &trans  &trans  &trans    &trans          &trans          &trans        &trans           &trans  &trans
-                             &trans  &trans  &trans    &mkp MB2        &mkp MB1        &mkp MB3
+&bt BT_CLR_ALL  &trans  &trans  &trans  &trans  &trans    &trans          &msc SCRL_DOWN  &msc SCRL_UP  &trans           &trans  &trans
+&sys_reset      &trans  &trans  &trans  &trans  &trans    &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &trans  &trans
+&bootloader     &trans  &trans  &trans  &trans  &trans    &trans          &trans          &trans        &trans           &trans  &trans
+                                &trans  &trans  &trans    &mkp MB2        &mkp MB1        &mkp MB3
             >;
         };
 
@@ -85,7 +85,7 @@
 
         sym {
             bindings = <
-&trans  &kp LEFT_BRACE  &kp AMPERSAND    &kp ASTERISK          &kp LEFT_PARENTHESIS   &kp RIGHT_PARENTHESIS    &trans  &trans           &trans             &trans         &trans         &trans
+&trans  &kp LEFT_BRACE  &kp AMPERSAND    &kp ASTERISK          &kp LEFT_PARENTHESIS   &kp RIGHT_PARENTHESIS    &trans  &trans           &trans             &trans         &trans         &bt BT_CLR_ALL
 &trans  &kp COLON       &kp DOLLAR       &kp PERCENT           &kp CARET              &kp PLUS                 &trans  &kp RIGHT_SHIFT  &kp RIGHT_CONTROL  &kp RIGHT_ALT  &kp RIGHT_GUI  &sys_reset
 &trans  &kp TILDE       &kp EXCLAMATION  &kp AT_SIGN           &kp HASH               &kp PIPE                 &trans  &trans           &trans             &trans         &trans         &bootloader
                                          &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp UNDERSCORE           &trans  &trans           &trans
@@ -94,10 +94,10 @@
 
         fun {
             bindings = <
-&trans  &kp F12  &kp F7  &kp F8  &kp F9  &kp DEL            &trans  &trans      &trans      &trans  &trans          &trans
-&trans  &kp F11  &kp F4  &kp F5  &kp F6  &kp PRINTSCREEN    &trans  &trans      &trans      &trans  &trans          &trans
-&trans  &kp F10  &kp F1  &kp F2  &kp F3  &trans             &trans  &bt BT_NXT  &bt BT_PRV  &trans  &bt BT_CLR_ALL  &trans
-                         &trans  &trans  &trans             &trans  &trans      &trans
+&trans  &kp F12  &kp F7  &kp F8  &kp F9  &kp DEL            &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp F11  &kp F4  &kp F5  &kp F6  &kp PRINTSCREEN    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp F10  &kp F1  &kp F2  &kp F3  &trans             &trans  &trans  &trans  &trans  &trans  &trans
+                         &trans  &trans  &trans             &trans  &trans  &trans
             >;
         };
     };
